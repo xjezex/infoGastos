@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>ngx-Table</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="switchStyle()">
+        <ion-icon name="bulb"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+	<br>
+ 
+  <ngx-datatable  [ngClass]="tablestyle" [rows]="rows" [columnMode]="'force'" [sortType]="'multi'" [reorderable]="false">
+    <ngx-datatable-column name="Name"></ngx-datatable-column>
+    <ngx-datatable-column name="Gender"></ngx-datatable-column>
+    <ngx-datatable-column name="Age"></ngx-datatable-column>
+  </ngx-datatable>
+</ion-content>

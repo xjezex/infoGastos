@@ -1,17 +1,45 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar color="danger">
+    
+    <ion-title>Diciembre 2018</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content padding >
+  <ion-card color="primary">
+    <ion-card-header>
+       <h1 text-center>$ 20.500</h1>
+       <h2 text-center>Saldo Actual</h2>
+    </ion-card-header> 
+  </ion-card>
+
+  <br>
+<ion-card color="alert">
+ <ion-list no-lines>
+    <ion-item>
+      <ion-icon name="logo-usd" color="secondary" item-end> 24000</ion-icon>
+       <h1>Ingresos: </h1>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="logo-usd" color="danger" item-end> 3500</ion-icon>
+       <h1>Gastos: </h1>
+    </ion-item>
+ </ion-list>
+</ion-card>
+
+<button ion-button color="light" clear>Light Clear</button>
+
+
+
+  <ion-fab right bottom padding>
+    <button ion-fab color="dark"><ion-icon name="arrow-dropleft"></ion-icon></button>
+    <ion-fab-list  side="left" padding>
+     Gasto<button ion-fab color="danger" (click)="goToAddExpense()"><ion-icon name="add"></ion-icon></button>
+     Ingreso<button ion-fab color="secondary"><ion-icon name="add"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+
+
 </ion-content>
+
+
